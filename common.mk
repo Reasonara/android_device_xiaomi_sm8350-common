@@ -316,6 +316,7 @@ PRODUCT_PACKAGES += \
     TelephonyOverlaySM8350
 
 PRODUCT_PACKAGES += \
+    DeviceAsWebcamOverlaySM8350 \
     FrameworkOverlaySM8350 \
     NcmTetheringOverlay \
     SettingsOverlaySM8350 \
