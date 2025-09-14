@@ -1,4 +1,4 @@
-# All unpinned blobs below are extracted from taoyao V816.0.21.0.ULIMIXM
+# All unpinned blobs below are extracted from star OS2.0.1.0.UKACNXM
 
 # ADSP
 vendor/bin/adsprpcd
@@ -296,11 +296,11 @@ vendor/lib64/libgsl.so
 vendor/lib64/libllvm-glnext.so
 vendor/lib64/libllvm-qcom.so
 
-# HotwordEnrollment
-product/priv-app/HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND/HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND.apk
-product/priv-app/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND.apk
-system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
-system_ext/framework/com.android.hotwordenrollment.common.util.jar
+# HotwordEnrollment -from miui_TAOYAOGlobal_1.0.21.0.ULIMIXM
+product/priv-app/HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND/HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND.apk|da5bced61ccf9974287fa17382db48de7e687ca8
+product/priv-app/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND.apk|0261cf14da55ed8eea0206685ba36a62b675e40c
+system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml|99cfd80965c170f4885a7dd62c0eaad1a0c7840f
+system_ext/framework/com.android.hotwordenrollment.common.util.jar|b768584073c6348713ffd0139d44039c9efc775a
 
 # IMS
 system_ext/lib64/lib-imsvideocodec.so
@@ -634,7 +634,7 @@ vendor/lib64/libssccalapi.so;DUMMY_SHARED_LIB
 vendor/bin/hw/vendor.xiaomi.hardware.citsensorservice@1.1-service
 vendor/etc/init/vendor.xiaomi.hardware.citsensorservice@1.1-service.rc
 vendor/etc/vintf/manifest/vendor.xiaomi.hardware.citsensorservice@1.1-service.xml
-vendor/lib64/hw/vendor.xiaomi.hardware.citsensorservice@1.1-impl.so
+vendor/lib64/hw/vendor.xiaomi.hardware.citsensorservice@1.1-impl.so;DISABLE_CHECKELF
 vendor/lib64/vendor.xiaomi.hardware.citsensorservice@1.0.so
 vendor/lib64/vendor.xiaomi.hardware.citsensorservice@1.1.so
 
