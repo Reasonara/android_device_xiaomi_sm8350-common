@@ -195,8 +195,10 @@ on property:init.svc.vendor.per_mgr=running
 on property:sys.shutdown.requested=*
     stop vendor.per_proxy
 
-service vendor.nv_mac /vendor/bin/nv_mac
-    class late_start
-    user system
-    group system inet net_admin wifi net_raw
-    oneshot
+service vendor.nv_mac /vendor/bin/nv_maon boot
+   on boot
+    # Mi 11 Ultra Touchscreen Wake Node
+    chown system system /sys/class/touch/tp_node/wake_gesture
+    chmod 0660 /sys/class/touch/tp_node/wake_gesture
+    # Force enable it
+    write /sys/class/touch/tp_node/wake_gesture 1
