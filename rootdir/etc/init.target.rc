@@ -124,6 +124,14 @@ on boot
     chown system system /sys/class/thermal/thermal_message/balance_mode
     chown system system /sys/class/thermal/thermal_message/charger_temp
     chown cameraserver cameraserver /sys/class/thermal/thermal_message/flash_state
+# Mi 11 Ultra Touchscreen Wake Node
+    chown system system /sys/class/touch/tp_node/wake_gesture
+    chmod 0664 /sys/class/touch/tp_node/wake_gesture
+    write /sys/class/touch/tp_node/wake_gesture 1
+
+    # Xiaomi Touch Device
+    chown system system /dev/xiaomi-touch
+    chmod 0660 /dev/xiaomi-touch
 
     # Set xiaomi touch permissions
     chown system system /dev/xiaomi-touch
@@ -196,9 +204,4 @@ on property:sys.shutdown.requested=*
     stop vendor.per_proxy
 
 service vendor.nv_mac /vendor/bin/nv_maon boot
-   on boot
-    # Mi 11 Ultra Touchscreen Wake Node
-    chown system system /sys/class/touch/tp_node/wake_gesture
-    chmod 0660 /sys/class/touch/tp_node/wake_gesture
-    # Force enable it
-    write /sys/class/touch/tp_node/wake_gesture 1
+
