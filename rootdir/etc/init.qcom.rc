@@ -120,9 +120,6 @@ on boot
 # msm specific files that need to be created on /data
 on post-fs-data
     mkdir /data/vendor/misc 01771 system system
-# ADD THIS FOR ADB
-    mkdir /data/misc/adb 0700 shell shell
-    restorecon /data/misc/adb
     # Create directory used by display clients
     mkdir /data/vendor/display 0770 system graphics
 
