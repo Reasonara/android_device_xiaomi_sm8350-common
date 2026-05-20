@@ -44,4 +44,7 @@ persist.vendor.sensors.enable.mag_filter=true
 # WFD
 persist.debug.wfd.enable=1
 
-ro.lunaris.maintainer=Dipsan
+ro.product.marketname=Xiaomi 11 ultra 
+ro.infinity.soc=Snapdragon 888
+ro.infinity.camera=50MP + 48MP + 48MP
+
